@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div class="col-xs-1" align="center">
+
+    <h1 class="pl-4">vMeet</h1>
+    <p class="pl-4">You can login here!</p>
+    <h2>Login</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-danger">Login</button>
+    </form>
+
+</div>
+{% endblock %}
