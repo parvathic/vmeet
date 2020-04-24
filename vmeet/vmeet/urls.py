@@ -23,6 +23,9 @@ urlpatterns = [
 ]
 urlpatterns += [
     path('webapp/', include('webapp.urls')),
+    path('', include('homepage.urls')),
+    path('perform/', include('performances.urls')),
+    path('class/', include('classes.urls'))
 ]
 urlpatterns += [
     path('', RedirectView.as_view(url='webapp/', permanent=True)),
