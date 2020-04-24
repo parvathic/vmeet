@@ -20,13 +20,12 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('login/index.html/game.html/', include('game.urls')),
+    path('login/index.html/', include('homepage.urls')),
+    path('login/', include('loginpage.urls')),
+    path('login/signup.html', include('loginpage.urls')),
 ]
-urlpatterns += [
-    path('webapp/', include('webapp.urls')),
-]
-urlpatterns += [
-    path('', RedirectView.as_view(url='webapp/', permanent=True)),
-]
+
 # Use static() to add url mapping to serve static files during development (only)
 from django.conf import settings
 from django.conf.urls.static import static

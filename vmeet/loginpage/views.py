@@ -5,4 +5,5 @@ def loginpage(request):
     username = ['parvathic', 'user2']
     password = ['12345', 'hello']
     args = {'key': password}
-    return render(request, 'loginpage/home.html', args)
+    return render(request, 'loginpage/login.html', args)
+

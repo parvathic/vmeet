@@ -1,0 +1,173 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+body {
+	background: url(../images/linedpaper/linedpaper.png);
+	font-family: 'Special Elite', cursive;
+	color: #333;
+	margin-bottom: 8.5em;
+}
+
+#main-top {
+	position: relative;
+}
+
+.jumbotron {
+	background-color: #ddd;
+	background: url(../images/The_Office_US_logo.png) no-repeat;
+	background-size: 100%;
+	color: red;
+}
+
+.jumbotron p {
+	/*filter: drop-shadow(0.03em 0.03em 0.06em red);*/
+}
+
+#volume-toggle {
+	position: absolute;
+	right: -2%;
+	top: 1%;
+	border: 1px solid red;
+	border-radius: 50%;
+	color: red;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 125%;
+	width: 2em;
+	height: 2em;
+	padding-top:0.375em;
+}
+
+#game-area {
+	position: relative;
+}
+
+#logo {
+	position: absolute;
+	right: -2.5%;
+	top: 5%;
+	transform: rotate(45deg);
+}
+
+#question-screen {
+	position: relative;
+}
+
+
+
+#timer {
+	display: none;
+	position: absolute;
+	top: -1.25em;
+	left: 40%;
+	border: 4px solid red;
+	color: red;
+	font-size: 300%;
+}
+
+#question {
+	margin-top: 1em;
+}
+
+.choice:hover {
+    filter: drop-shadow(0.063em 0.063em 0em red);
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: pink;
+    box-sizing: border-box;
+}
+#result-screen, #next-button, #end-screen, #replay-button {
+	display: none;
+}
+
+#result {
+
+	position: relative;
+}
+
+#next-button {
+	position: absolute;
+	top: 0;
+	left: -.5%;
+}
+
+
+.btn, .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:visited, .btn-primary:target {
+	color: white;
+	background-color: #C60000;	
+	border-color: #FF3939;
+}
+
+.btn-primary:hover {
+	color: white;
+	border-color: red;
+	background-color: pink;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	margin-top: 0.5em;
+	padding-top: 0.5em;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 6em;
+	background-color: pink;
+	border-top-style: solid;
+	border-top-color: red;
+	border-top-width: .325em;
+}
+
+.footer a:link {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+
+.footer a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.footer a:hover {
+    filter: drop-shadow(0.063em 0.063em 0em red);
+}
+
+@media screen and (max-width: 768px) {
+
+	#timer {
+		left: 0;
+	} 
+
+	#logo {
+		display: none;
+	}
+
+	#next-button {
+		top: -10%;
+	}
+
+	#volume-toggle {
+		right: 1%;
+		top: 100px;
+	}
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+
+	#timer {
+		left: 20%;
+	}
+
+	/*#result-text {
+		position: absolute;
+		left: 20%;
+	}*/
+
+	#logo {
+		right: -5%;
+		top: -35%;	
+	}
+}

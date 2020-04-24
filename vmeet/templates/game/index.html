@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VMeet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        .box {
+        width: 500px;
+  border: 5px solid black;
+  padding: 10px;
+  margin: 20px;
+  height: 200px;
+        }
+        .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   height: 30px;
+   color: white;
+   text-align: center;
+}
+    </style>
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div class="jumbotron" style="background-color:black; height:170px;">
+		<div class="container">
+			<h1 class="title" style="color:white;">
+				VMeet
+			</h1>
+			<h3 style="color:white;">Stay Connected!</h3>
+		</div>
+
+		 </div>
+
+
+	<section class="blog-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 blog-posts">
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="blog-post">
+								<img src="{% static 'img/blog/4.jpg' %}" alt="">
+								
+								<h4><a href="home.html">Tic-Tac-Toe</a></h4>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="blog-post">
+								<img src="{% static 'img/blog/5.jpg' %}" alt="">
+								
+								<h4><a href="trivia.html">The Office Quiz</a></h4>
+								
+								</div>
+						</div>
+					</div>
+						<div style="height:50px"></div>
+						<dic class="row">
+						<div class="col-md-6">
+							<div class="blog-post">
+								<img src="{% static 'img/blog/3.jpg' %}" alt="" style="
+								width: 315px;
+								height: 210.5px;
+							">
+								<h4>Coming Soon</h4>
+								
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="blog-post">
+								<img src="{% static 'img/blog/2.jpg' %}" alt="" style="width: 292px; height: 210.5px;">
+								<h4>Coming Soon</h4>
+								
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- Blog section end -->
+
+	<!-- Blog list section -->
+	<!-- Blog list section end --
+
+	<!-- Footer section -->
+	<div class="footer-section">
+
+	</div>
+	<!-- Footer section end -->
+															
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/jquery.slicknav.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/circle-progress.min.js' %}"></script>
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
